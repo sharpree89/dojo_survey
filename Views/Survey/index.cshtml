@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Dojo Survey</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+        <link rel="stylesheet" href="~/css/style.css"/>
+    </head>
+    <body style="border: 2px solid paleturquoise; margin-top: 100px; margin-left: 480px; width: 500px; height: 500px;">
+        <center>
+            <h4>Dojo Survey</h4>
+            <form action="/results" method="post">
+                <p>Name: <input type="text" name="name"></p>
+                <p>Location: <select name="location">
+                            <option value="Bellevue">Bellevue</option>
+                            <option value="Chicago">Chicago</option>
+                            <option value="D.C.">D.C.</option>
+                            <option value="San Jose">San Jose</option>
+                          </select></p>
+                <p>Favorite Language: <select name="language">
+                                     <option value="Python">Python</option>
+                                     <option value="Javascript">Javascript</option>
+                                     <option value="Ruby">Ruby</option>
+                                     <option value="C#">C#</option>
+                                   </select></p>
+                <p>Comments: <input type="text" name="comments"></p>
+                <p><input class="button-primary" type="submit" value="Submit"><p>
+            </form>
+        </center>
+    </body>
+</html>

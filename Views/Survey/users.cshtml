@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Dojo Survey</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+        <link rel="stylesheet" href="~/css/style.css"/>
+    </head>
+    <body style="border: 2px solid paleturquoise; margin-top: 100px; margin-left: 480px; width: 500px; height: 350px;">
+        <center>
+            <h4>Survey Results</h4>
+            <p><b>Name:</b> @ViewBag.name</p>
+            <p><b>Location:</b> @ViewBag.location</p>
+            <p><b>Favorite Language:</b> @ViewBag.language</p>
+            <p><b>Comments:</b> @ViewBag.comments</p>
+            <p><a href="/"><button class="button-primary">Go Back</button></a><p>
+        </center>
+    </body>
+</html>
